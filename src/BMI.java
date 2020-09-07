@@ -53,7 +53,7 @@ public class BMI {
 
         // Input prompt for weight.
         System.out.printf("\n\nPlease enter your weight in pounds: ");
-        float weight = scan.nextFloat();
+        double weight = scan.nextDouble();
         System.out.printf("Your weight: %.2f lbs", weight);
 
         System.out.printf("\n\n>>> Your BMI is: %.2f", calculateBMI(weight, heightFt * 12 + heightIn));
