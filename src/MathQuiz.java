@@ -14,6 +14,9 @@ class MathQuiz {
         loop();
     }
 
+    /**
+     * Print the program welcome header, as required by (3)(a).
+     */
     private static void printHeader() {
         System.out.println("=======================");
         System.out.println("Welcome to my math quiz");
