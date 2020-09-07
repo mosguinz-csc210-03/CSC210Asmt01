@@ -22,7 +22,7 @@ public class BMI {
      * @return The BMI value (lbs/in^2).
      */
     private static double calculateBMI(double weight, double height) {
-        return 703 * weight / Math.pow(height, 2);
+        return 703 * weight / (height * height);
     }
 
     /**
