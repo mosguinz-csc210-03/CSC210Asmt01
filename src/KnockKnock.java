@@ -37,6 +37,6 @@ public class KnockKnock {
         scan.nextLine();  // "Who's there?"
         System.out.println("Annie");
         String resp = scan.next(); // "Annie who?"
-        System.out.printf("%s thing you can do better", resp);
+        System.out.printf("%s thing you can do better, I can do better", resp);
     }
 }
