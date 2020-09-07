@@ -15,6 +15,15 @@ public class BMI {
     }
 
     /**
+     * Print the program welcome header, as required by (3)(a).
+     */
+    private static void printHeader() {
+        System.out.println("============================");
+        System.out.println("Welcome to my BMI calculator");
+        System.out.println("============================");
+    }
+
+    /**
      * Calculate the BMI from the given weight and height.
      *
      * @param weight Weight in pounds.
@@ -23,15 +32,6 @@ public class BMI {
      */
     private static double calculateBMI(double weight, double height) {
         return 703 * weight / (height * height);
-    }
-
-    /**
-     * Print the program welcome header, as required by (3)(a).
-     */
-    private static void printHeader() {
-        System.out.println("============================");
-        System.out.println("Welcome to my BMI calculator");
-        System.out.println("============================");
     }
 
     /**
