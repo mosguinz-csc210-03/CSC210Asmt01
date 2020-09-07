@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class BMI {
     public static void main(String[] args) {
+        // Run the program loop.
         loop();
     }
 
@@ -39,6 +40,7 @@ public class BMI {
      * Run the program loop.
      */
     private static void loop() {
+        // Print the header.
         printHeader();
 
         // Create a Scanner object.
@@ -47,8 +49,12 @@ public class BMI {
         // Input prompts for height (in feet and inches, separately).
         System.out.println("Please enter your height in feet and inches (press Enter after each number)");
         System.out.print("Feet: ");
+
+        // Scan and store the user's input for height in feet.
         int heightFt = scan.nextInt();
         System.out.print("Inches: ");
+
+        // Scan and store the user's input for height in inches.
         int heightIn = scan.nextInt();
         System.out.printf("Your height: %d'%d\"", heightFt, heightIn);
 

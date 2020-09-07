@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 class MathQuiz {
     public static void main(String[] args) {
+        // Run the program loop.
         loop();
     }
 
@@ -31,13 +32,21 @@ class MathQuiz {
      * @param userAnswer The answer that the user provided.
      */
     private static void evaluate(int number, int userAnswer) {
-        int answer = number * number;
-        String msg = userAnswer == answer ? "Correct" : "Incorrect";
+        // This is the expected answer.
+        int expectedAnswer = number * number;
 
-        System.out.printf("\n>>> %s! The answer is: %d.", msg, answer);
+        /*
+            Determine which message to use, depending on the user's
+            answer. "Correct" if the answer matches the expected
+            answer. Otherwise "Incorrect".
+         */
+        String msg = userAnswer == expectedAnswer ? "Correct" : "Incorrect";
+
+        System.out.printf("\n>>> %s! The answer is: %d.", msg, expectedAnswer);
     }
 
     private static void loop() {
+        // Print the header.
         printHeader();
 
         // Create a Scanner object.
@@ -51,7 +60,7 @@ class MathQuiz {
         System.out.printf("What is the value of %1$d squared (%1$d^2)? Answer: ", number);
         int answer = scan.nextInt();
 
-        // Evaluate the given answer and show a message.
+        // Evaluate the given answer and display a message accordingly.
         evaluate(number, answer);
     }
 }

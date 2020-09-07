@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class KnockKnock {
     public static void main(String[] args) {
+        // Run the program loop.
         loop();
     }
 
@@ -28,6 +29,7 @@ public class KnockKnock {
      * Run the program loop.
      */
     private static void loop() {
+        // Print the header.
         printHeader();
 
         // Create a Scanner object.
@@ -35,9 +37,13 @@ public class KnockKnock {
 
         // Prompts for user to respond to input.
         System.out.println("Knock knock");
-        scan.nextLine();  // "Who's there?"
+
+        // Expects "Who's there?" Scan and discard input.
+        scan.nextLine();
         System.out.println("Annie");
-        String resp = scan.next(); // "Annie who?"
+
+        // "Annie who?" Scan and store the first word (ending on first whitespace).
+        String resp = scan.next();
         System.out.printf("%s thing you can do better, I can do better", resp);
     }
 }
