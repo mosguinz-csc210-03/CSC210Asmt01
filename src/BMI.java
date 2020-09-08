@@ -59,7 +59,7 @@ public class BMI {
         System.out.printf("Your height: %d'%d\"", heightFt, heightIn);
 
         // Input prompt for weight.
-        System.out.printf("\n\nPlease enter your weight in pounds: ");
+        System.out.print("\n\nPlease enter your weight in pounds: ");
         double weight = scan.nextDouble();
 
         // Format and print output to 2 decimal places.
