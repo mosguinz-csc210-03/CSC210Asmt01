@@ -28,7 +28,7 @@ public class KnockKnock {
     /**
      * Run the program loop.
      */
-    private static void loop() {
+    public static void loop() {
         // Print the header.
         printHeader();
 
