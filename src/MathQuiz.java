@@ -45,7 +45,7 @@ class MathQuiz {
         System.out.printf("\n>>> %s! The answer is: %d.", msg, expectedAnswer);
     }
 
-    private static void loop() {
+    public static void loop() {
         // Print the header.
         printHeader();
 
